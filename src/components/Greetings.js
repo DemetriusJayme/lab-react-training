@@ -1,7 +1,13 @@
-import App from '../App';
+//Iteracao 2
+//Component Greetings.js
 
-function Greetings(props) {
-  return <div></div>;
+function Greetings({ lang, children }) {
+  return (
+    <p>
+      {lang === 'de' ? 'Hallo ' : 'Bonjour '}
+      {children}
+    </p>
+  );
 }
 
 export default Greetings;
